@@ -1,0 +1,163 @@
+:root {
+    --gray-900: #111827;
+    --gray-800: #070315;
+    --gray-700: #061630;
+    --gray-600: #07326d;
+    --gray-300: #d1d5db;
+    --blue-500: #3b82f6;
+    --blue-400: #60a5fa;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.relative {
+    position: relative;
+    overflow: hidden;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+}
+
+section {
+    padding-top: 60px; /* Adjust this value based on your navbar height */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    font-family: system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+}
+
+.relative {
+    position: relative;
+    width: 100vw;
+}
+
+/* Cursor Effect */
+.cursor-effect {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--blue-400);
+    opacity: 0.3;
+    border-radius: 9999px;
+    filter: blur(24px);
+    pointer-events: none;
+    /* Remove the transition property that was causing the delay */
+    will-change: transform; /* Optimize for animations */
+}
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    background-color: var(--gray-800);
+    padding: 1rem 0;
+    font-size: 1.125rem;
+    z-index: 50;
+}
+
+nav button {
+    background: none;
+    border: none;
+    color: var(--gray-300);
+    cursor: pointer;
+    transition: color 0.3s, background-size 0.3s;
+    font-size: 1.25rem; /* Increased font size */
+    position: relative;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+}
+
+nav button:hover {
+    color: white;
+    background-size: 100% 2px; /* Underline fill effect */
+}
+
+.cta-button {
+    background-color: var(--blue-500);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 9999px;
+}
+
+/* Sections */
+header, section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section#blog {
+    background-color: var(--gray-800);
+}
+
+section#portfolio {
+    background-color: var(--gray-700);
+}
+
+section#contact {
+    background-color: var(--gray-600);
+}
+
+/* Typography */
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 0;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+p {
+    font-size: 1.125rem;
+    color: var(--gray-300);
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 2.5rem 0;
+    text-align: center;
+    color: var(--gray-300);
+}
+
+/* Animations */
+.animate-in {
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
