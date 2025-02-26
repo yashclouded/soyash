@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yash's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="relative">
-        <!-- Cursor Effect -->
         <div id="cursor" class="cursor-effect"></div>
         
         <!-- Navbar -->
@@ -21,39 +20,141 @@
         </nav>
         
         <!-- Header -->
-         <section id = "home">
-        <header class="animate-in">
-            <h1>Hi, I'm Yash!</h1>
-            <p>Exploring tech, science, and beyond 🚀</p>
-        </header>
+        <section id="home">
+            <header class="animate-in">
+                <h1>Hi, I'm Yash!</h1>
+                <p>Exploring tech, science, and beyond 🚀</p>
+            </header>
         </section>
         
         <!-- Blog Section -->
         <section id="blog">
-            <h2>Blog</h2>
-            <p>Sharing my thoughts and experiences.</p>
+            <h2 class="section-title">Blog</h2>
+            <p class="section-subtitle">Sharing my thoughts and experiences.</p>
+            
+            <div class="blog-container">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/800/500" alt="Machine Learning Basics">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Machine Learning Fundamentals</h3>
+                        <p>Exploring the core concepts of machine learning algorithms and their applications in today's world.</p>
+                        <a href="#full-article-1" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/800/500" alt="Web Development Trends">
+                    </div>
+                    <div class="blog-content">
+                        <h3>2025 Web Development Trends</h3>
+                        <p>A look at the emerging technologies and frameworks that are shaping the future of web development.</p>
+                        <a href="#full-article-2" class="read-more">Read More</a>
+                    </div>
+                </article>
+                
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="/api/placeholder/800/500" alt="Building a Portfolio">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Building an Effective Dev Portfolio</h3>
+                        <p>Tips and strategies for creating a portfolio that showcases your skills and attracts potential employers.</p>
+                        <a href="#full-article-3" class="read-more">Read More</a>
+                    </div>
+                </article>
+            </div>
         </section>
         
         <!-- Portfolio Section -->
         <section id="portfolio">
-            <h2>Portfolio</h2>
-            <p>A collection of my best works.</p>
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-subtitle">A collection of my best works.</p>
+            
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Project 1">
+                    <div class="portfolio-overlay">
+                        <h3>E-Commerce Platform</h3>
+                        <p>A full-stack online shopping platform with user authentication and payment integration.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Weather App</h3>
+                        <p>Real-time weather application using external APIs and interactive maps.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Project 3">
+                    <div class="portfolio-overlay">
+                        <h3>Task Management Tool</h3>
+                        <p>Collaborative project management application with drag-and-drop interface.</p>
+                    </div>
+                </div>
+                
+                <div class="portfolio-item">
+                    <img src="/api/placeholder/600/400" alt="Project 4">
+                    <div class="portfolio-overlay">
+                        <h3>Fitness Tracker</h3>
+                        <p>Mobile-responsive application for tracking workouts and nutrition.</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- Contact Section -->
-        <section id="contact">
-            <h2>Get in Touch</h2>
-            <p>Let's connect and work together!</p>
+        <section id="contact" class="animate-on-scroll">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">Let's connect and work together!</p>
+            
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>yashforclouds@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>Lucknow, India</p>
+                    </div>
+                </div>
+            </div>
         </section>
         
         <!-- Footer -->
-        <footer class="animate-in">
-            Made with ❤️ by Yash
+        <footer>
+            <div class="footer-content">
+                <p>Made with ❤️ by Yash</p>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/yash-singh-a41540270/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/yashclouded" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://x.com/thisisyashsingh" target="_blank"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Yash's Portfolio. All rights reserved.</p>
+            </div>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
 </html>
-
-
-
